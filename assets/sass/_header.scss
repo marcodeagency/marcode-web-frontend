@@ -9,7 +9,7 @@ header {
       .menu {
         display: flex;
         column-gap: 40px;
-        transition: 1s ease;
+        transition: 1s ease-in-out;
         li {
           a {
             position: relative;
@@ -19,7 +19,7 @@ header {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            transition: 1s ease;
+            transition: 500ms ease-in-out;
             &:hover {
               color: #516caf;
             }

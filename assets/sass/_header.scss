@@ -191,3 +191,18 @@ header {
     }
   }
 }
+
+@media (max-width: 420px) {
+  header {
+    .row {
+      .logo {
+        img {
+          width: 100px;
+        }
+      }
+    }
+    .hamburger {
+      top: 30px;
+    }
+  }
+}

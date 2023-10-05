@@ -12,12 +12,32 @@ header {
         transition: 1s ease;
         li {
           a {
+            position: relative;
             color: #252525;
             font-family: Inter;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            transition: 1s ease;
+            &:hover {
+              color: #516caf;
+              font-weight: 500;
+            }
+            &::after {
+              content: "";
+              width: 0;
+              height: 1px;
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%);
+              bottom: -7px;
+              background: #516caf;
+              transition: 0.7s ease-in-out;
+            }
+            &:hover::after {
+              width: 100%;
+            }
           }
         }
       }
@@ -69,6 +89,7 @@ header {
     }
     .theme {
       margin-right: 45px;
+      cursor: pointer;
     }
   }
   .hamburger {

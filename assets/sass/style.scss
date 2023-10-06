@@ -5,6 +5,14 @@
   scroll-behavior: smooth;
 }
 
+.btn {
+  border-radius: 24px;
+  background: #f15958;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1600px;
   width: 100%;
@@ -43,4 +51,5 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=DM+Sans:opsz@9..40&family=Inter:wght@400;500;600&family=Istok+Web:wght@400;700&family=Jost&family=Lato:wght@700&family=Roboto:wght@500&display=swap");
 
-@import 'header';
+@import "header";
+@import "digitalWorld";

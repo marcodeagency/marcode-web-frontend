@@ -1,0 +1,170 @@
+#digitalWorld {
+  background: #eaf0ff;
+  padding: 83px 0 200px;
+  .container {
+    .row {
+      .digitalWorldTop {
+        display: flex;
+        justify-content: space-between;
+        .left {
+          .title {
+            max-width: 650px;
+            color: #252525;
+            font-family: Istok Web;
+            font-size: 78px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            margin-bottom: 61px;
+          }
+          .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            padding: 11px 0;
+            span {
+              color: #fff;
+              font-family: Istok Web;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+        .right {
+          position: relative;
+          .image {
+            img:nth-child(2) {
+              position: absolute;
+              top: -60px;
+              right: 30px;
+            }
+            img:nth-child(3) {
+              position: absolute;
+              top: 5px;
+              right: 100px;
+              width: 64px;
+              height: 27px;
+              object-fit: cover;
+            }
+            img:nth-child(4) {
+              position: absolute;
+              top: 40%;
+              right: -45px;
+            }
+            img:nth-child(5) {
+              position: absolute;
+              top: 25%;
+              left: -100px;
+            }
+            img:nth-child(6) {
+              position: absolute;
+              bottom: -50px;
+              left: -100px;
+            }
+            img:nth-child(7) {
+              position: absolute;
+              bottom: -100px;
+              left: 100px;
+            }
+          }
+          .btnImage {
+            div {
+              position: absolute;
+              color: #fff;
+              text-align: center;
+              font-family: Inter;
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 400;
+              padding: 10px 0;
+              line-height: normal;
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.2) 0%,
+                  rgba(0, 0, 0, 0.2) 100%
+                ),
+                linear-gradient(
+                  180deg,
+                  rgba(241, 89, 88, 0.63) 0%,
+                  rgba(70, 99, 169, 0.63) 100%
+                );
+              &:nth-child(1) {
+                width: 200px;
+                top: 20px;
+                left: 0px;
+                border-radius: 50px 50px 0 50px;
+              }
+              &:nth-child(2) {
+                width: 200px;
+                bottom: 100px;
+                left: -40px;
+                border-radius: 50px 50px 0 50px;
+              }
+              &:nth-child(3) {
+                width: 135px;
+                top: 70px;
+                right: -20px;
+                border-radius: 50px 50px 50px 0;
+              }
+              &:nth-child(4) {
+                width: 125px;
+                bottom: 140px;
+                right: -40px;
+                border-radius: 50px 50px 50px 0;
+              }
+            }
+            div.active {
+              animation: move 5s infinite alternate;
+            }
+          }
+        }
+      }
+      .digitalWorldBottom {
+        max-width: 1090px;
+        margin: 29px auto 0;
+        .content {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 40px 0;
+          background: rgba(68, 99, 171, 0.2);
+          .info {
+            .title {
+              color: #fff;
+              font-family: Istok Web;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+            .userCount {
+              color: #fff;
+              font-family: Istok Web;
+              font-size: 67px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(10px);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+}

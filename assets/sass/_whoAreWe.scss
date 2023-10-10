@@ -31,7 +31,10 @@
           margin-bottom: 57px;
         }
         .btn {
-          width: 158px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
           padding: 11px 0;
           color: #fff;
           font-family: Istok Web;

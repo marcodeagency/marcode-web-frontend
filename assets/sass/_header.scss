@@ -1,7 +1,7 @@
 header {
   background: #eaf0ff;
   padding: 33px 20px;
-  .row {
+  .contRow {
     display: flex;
     align-items: center;
     nav {
@@ -100,7 +100,7 @@ header {
     cursor: pointer;
     overflow: hidden;
     display: none;
-    z-index: 1;
+    z-index: 6;
     div {
       pointer-events: none;
       height: 3px;
@@ -150,9 +150,9 @@ header {
           position: absolute;
           top: 0;
           right: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
+          width: 100vw;
+          height: 100vh;
+          z-index: 6;
           padding: 57px 0 0 30px;
           transform: translateX(-100%);
           visibility: hidden;

@@ -1,49 +1,88 @@
 * {
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+  text-decoration: none !important;
+  list-style: none !important;
   scroll-behavior: smooth;
 }
 
-.btn {
-  border-radius: 24px;
-  background: #f15958;
-  border: none;
-  color: #fff;
-  cursor: pointer;
+.scrolling-text {
+  white-space: nowrap;
+  animation: scrollText 15s linear infinite;
+  color: #000;
+  font-family: Bricolage Grotesque;
+  font-size: 25.739px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.945%;
 }
 
-.container {
+.scrolling-text-container {
+  height: 70px;
+  background: rgba(68, 99, 171, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2390730381011963px);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.drob {
+  width: 13px;
+  height: 27px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Aclonica;
+  font-size: 25.739px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.945%;
+}
+.cards {
+  flex-wrap: wrap;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cont {
   width: 86%;
   margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
-  .container {
+  .cont {
     max-width: 992px;
   }
 }
 
 @media (max-width: 992px) {
-  .container {
+  .cont {
     max-width: 768px;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
+  .cont {
     max-width: 576px;
   }
 }
 
 @media (max-width: 576px) {
-  .container {
+  .cont {
     max-width: 400px;
   }
 }
 
 @media (max-width: 420px) {
-  .container {
+  .cont {
     max-width: 350px;
   }
 }
@@ -53,3 +92,6 @@
 @import "header";
 @import "digitalWorld";
 @import "whoAreWe";
+@import "services";
+@import "branding";
+@import "Banner";

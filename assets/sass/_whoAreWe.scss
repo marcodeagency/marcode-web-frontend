@@ -1,0 +1,161 @@
+#whoAreWe {
+  position: relative;
+  top: -224px;
+  .cont {
+    .contRow {
+      width: 90%;
+      margin: 0 auto;
+      background: rgba(68, 99, 171, 1);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 48px 0;
+      .left {
+        max-width: 35%;
+        .title {
+          color: #fff;
+          font-family: Istok Web;
+          font-size: 80px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+        }
+        p {
+          color: #fff;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          margin-bottom: 57px;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          padding: 11px 0;
+          color: #fff;
+          font-family: Istok Web;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border: none;
+          background: rgba(241, 89, 88, 1);
+          border-radius: 24px;
+        }
+      }
+      .right {
+        margin-top: 30px;
+        .bigCircle {
+          width: 76px;
+          height: 76px;
+          background: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .smallCircle {
+            width: 24px;
+            height: 24px;
+            background: rgba(68, 99, 171, 1);
+            border-radius: 50%;
+            position: relative;
+            .arrow {
+              position: absolute;
+              top: 13px;
+              transform-origin: top;
+            }
+          }
+        }
+        .words {
+          a {
+            color: #fff;
+            font-family: Bricolage Grotesque;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            display: inline-block;
+            transition: 0.5s ease-in-out;
+          }
+          .about {
+            transform: translateX(-65px) rotate(-120deg);
+          }
+          .services {
+            transform: translate(-40px, -160px) rotate(-40deg);
+          }
+          .portfolio {
+            transform: translate(85px, -180px) rotate(25deg);
+          }
+          .ourTeam {
+            transform: translate(140px, -40px) rotate(95deg);
+          }
+          .contact {
+            transform: translate(70px, 56px) rotate(155deg);
+          }
+        }
+      }
+      .bigCircle:has(+ .words > .about:hover) .arrow {
+        transform: rotate(60deg);
+      }
+      .bigCircle:has(+ .words > .services:hover) .arrow {
+        transform: rotate(150deg);
+      }
+      .bigCircle:has(+ .words > .portfolio:hover) .arrow {
+        transform: rotate(200deg);
+      }
+      .bigCircle:has(+ .words > .ourTeam:hover) .arrow {
+        transform: rotate(-80deg);
+      }
+      .bigCircle:has(+ .words > .contact:hover) .arrow {
+        transform: rotate(-20deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #whoAreWe {
+    .cont {
+      .contRow {
+        flex-direction: column;
+        .left {
+          max-width: 70%;
+        }
+        .right {
+          padding: 120px 0 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #whoAreWe {
+    .cont {
+      .contRow {
+        flex-direction: column;
+        .left {
+          max-width: 100%;
+          .btn {
+            display: none;
+          }
+          .title {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          p {
+            padding: 0 20px;
+          }
+        }
+        .right {
+          padding: 50px 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=DM+Sans:opsz@9..40&family=Inter:wght@400;500;600&family=Istok+Web:wght@400;700&family=Jost&family=Lato:wght@700&family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.design {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.design div {
+  width: 440px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-active {
+  background-color: #f15958;
+  color: #fff;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  animation: scrollText 15s linear infinite;
+  color: #000;
+  font-family: Bricolage Grotesque;
+  font-size: 25.739px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.945%;
+}
+
+.scrolling-text-container {
+  height: 70px;
+  background: rgba(68, 99, 171, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2390730381011963px);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.drob {
+  width: 13px;
+  height: 27px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Aclonica;
+  font-size: 25.739px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.945%;
+}
+
+/* footer */
+.card {
+  position: relative;
+}
+
+/* section */
+.cards-section {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.logo-special {
+  position: absolute;
+  left: -6px;
+  top: 22px;
+}
+
+.content-special {
+  position: absolute;
+  color: #f4f4f4;
+  font-family: Lato;
+  font-size: 53.436px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  top: 27px;
+}
+
+/* section */
+
+/* footer */
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marcode-description {
+  color: #0e0b1e;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.description-information {
+  display: flex;
+  gap: 25px;
+}
+
+.description-information p a {
+  text-decoration: underline !important;
+}
+
+.description-information p a {
+  text-decoration-line: underline;
+  color: #252525;
+  font-family: Inter;
+  font-size: 18px;
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  width: 330px !important;
+}
+
+.information-contact {
+  width: 165px !important;
+}
+
+.marcode-description {
+  width: 300px !important;
+}
+
+.btn-contact {
+  color: #fff;
+  font-family: Istok Web;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 150px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #f15958;
+  border: none;
+}
+
+.marCode {
+  flex-wrap: wrap !important;
+  width: 100% !important;
+}
+
+.button {
+  align-items: center;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .marCode {
+    justify-content: center !important;
+  }
+}
+
+.scrollUp {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.cont {
+  width: 86%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .cont {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cont {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cont {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cont {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cont {
+    max-width: 350px;
+  }
+}
+
+@import "header";
+@import "digitalWorld";
+@import "whoAreWe";
+@import "services";
+@import "branding";
+@import "banner";
+@import "form";

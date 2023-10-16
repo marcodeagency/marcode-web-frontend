@@ -1,0 +1,25 @@
+header.darkMode {
+  background: url("../img/darkMode/darkMode.jpg") !important;
+}
+
+#digitalWorld.darkMode {
+  background: url("../img/darkMode/darkMode.jpg");
+}
+
+.changeMode.darkMode {
+  background: #092567;
+  .titles {
+    color: #fff;
+  }
+}
+
+footer.darkMode {
+  .logo {
+    .logoDark {
+      display: block;
+    }
+    .logoLight {
+      display: none;
+    }
+  }
+}
